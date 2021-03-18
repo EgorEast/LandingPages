@@ -2,6 +2,10 @@ $minWidthContent: 834px;
 $maxWidthContent: 1219px;
 $myGreen: #007765;
 
+::-webkit-scrollbar {
+	width: 0;
+}
+
 body {
 	font-family: Roboto;
 	min-width: $minWidthContent;

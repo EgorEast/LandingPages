@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+
 body {
   font-family: Roboto;
   min-width: 834px;
