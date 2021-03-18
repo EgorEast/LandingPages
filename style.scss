@@ -1,0 +1,163 @@
+$minWidthContent: 834px;
+$maxWidthContent: 1219px;
+$myGreen: #007765;
+
+body {
+	font-family: Roboto;
+	min-width: $minWidthContent;
+}
+
+header {
+	background-color: $myGreen;
+	justify-content: center;
+
+	.header-content {
+		height: 84px;
+		max-width: $maxWidthContent;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.logo {
+			height: 45px;
+			margin-left: 55px;
+		}
+
+		.menu {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+			margin-right: 55px;
+
+			font-weight: 500;
+			font-size: 24px;
+			color: #FFFFFF;
+		}
+	}
+}
+
+
+main {
+
+	.headers {
+		margin-top: 0px;
+		color: $myGreen;
+		font-family: RobotoBold;
+		text-align: center;
+		font-size: 64px;
+	}
+
+	.page-title {
+		height: 403px;
+		background: url(./src/images/firstImg.png);
+		background-size: cover;
+		background-position: center;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+
+		.title-text {
+			font-family: RobotoBold;
+			font-weight: 500;
+			font-size: 72px;
+			color: #FFFFFF;
+		}
+	}
+
+	.text-with-logo {
+		display: flex;
+
+		.ppc-logo {
+			width: 115px;
+			height: 115px;
+		}
+
+		p {
+			margin-top: 0px;
+			margin-left: 48px;
+		}
+	}
+
+	.gray-bcg {
+		background: #EEEEEE;
+	}
+
+	.text-container {
+		padding: 48px;
+
+		p {
+			font-size: 32px;
+		}
+
+		b {
+			font-family: RobotoBold;
+		}
+	}
+
+	.hero {
+		height: 483px;
+		background: url(./src/images/secondImg.png);
+		background-size: cover;
+		background-position: center;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+
+		p {
+			font-family: RobotoBold;
+			width: 893px;
+			color: #FFFFFF;
+			font-weight: 500;
+			font-size: 48px;
+			text-align: center;
+		}
+	}
+
+	.team {
+		display: grid;
+
+		.team-member {
+			img {
+				width: 168px;
+				height: 168px;
+			}
+
+			.member-name {
+				color: $myGreen;
+				font-family: RobotoBold;
+				font-size: 24px;
+			}
+
+			.member-position {
+				font-family: RobotoItalic;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+footer {
+	background-color: #333333;
+	color: #FFFFFF;
+
+	p {
+		font-size: 18px;
+		width: 540px;
+		text-align: center;
+	}
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(./src/fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+	font-family: RobotoBold;
+	src: url(./src/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+	font-family: RobotoItalic;
+	src: url(./src/fonts/Roboto-Italic.ttf);
+}
