@@ -94,6 +94,15 @@ body {
   color: #FFFFFF;
 }
 
+.header-content .menu-buttons {
+  border: none;
+  background: none;
+  font-weight: 500;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
 .title-text {
   height: 403px;
   display: -webkit-box;
