@@ -94,13 +94,12 @@ body {
   color: #FFFFFF;
 }
 
-.header-content .menu-buttons {
-  border: none;
-  background: none;
+.header-content .menu-ref {
   font-weight: 500;
   font-family: Roboto;
   font-size: 24px;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .title-text {
