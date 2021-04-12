@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto;
+}
+
+header {
+  position: fixed;
+  height: 72px;
+  width: 100vw;
+  -webkit-box-shadow: 0 0 10px 0 #b8b8b8;
+          box-shadow: 0 0 10px 0 #b8b8b8;
+}
+
+header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-container .header-btn-container .sign-in-btn {
+  background: none;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  width: 78px;
+  height: 40px;
+}
+
+header .header-container .header-btn-container .bascet-btn {
+  border: none;
+  background: url("./images/basket.svg");
+  width: 19px;
+  height: 23px;
+}
+
+main {
+  padding-top: 72px;
+}
+
+main .search .search-field-container {
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .search .search-field-container .search-field {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+main .search .hor-line-dark {
+  background-color: #757575;
+  height: 1px;
+  opacity: 0.3;
+}
+
+main .list-restaurats .header-list-rest {
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+main .list-restaurats .rest-img {
+  height: 256px;
+  width: 317.93548583984375px;
+}
+
+.btn-up {
+  border: none;
+  background: url("./images/btnUp.svg");
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(./fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: RobotoItalic;
+  src: url(./fonts/Roboto-Italic.ttf);
+}
+/*# sourceMappingURL=style.css.map */
