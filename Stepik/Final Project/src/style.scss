@@ -1,6 +1,6 @@
 // $minWidthContent: ;
 $maxWidthContent: 962px;
-$logo: url('./images/logo.svg');
+$logo: url(./images/logo.svg);
 
 * {
 	margin: 0px;
@@ -11,7 +11,7 @@ $logo: url('./images/logo.svg');
 header {
 	position: fixed;
 	height: 72px;
-	width: 100vw;
+	width: 100%;
 	box-shadow: 0 0 10px 0 #b8b8b8;
 	background: white;
 
@@ -35,7 +35,7 @@ header {
 
 			.bascet-btn {
 				border: none;
-				background: url('./images/basket.svg');
+				background: url(./images/basket.svg);
 				width: 19px;
 				height: 23px;
 			}
@@ -73,7 +73,10 @@ main {
 			font-size: 16px;
 		}
 
-		.card {}
+		.card {
+			width: 308px;
+			height: 366px;
+		}
 
 		.rest-img {
 			height: 256px;
@@ -93,9 +96,27 @@ footer {
 	}
 
 	.hor-line-light {
-		background-color: #FFFFFF; // Цвет линии 
+		background-color: white; // Цвет линии 
 		height: 1px; // Толщина линии
 		opacity: 0.3;
+	}
+
+	.social {
+		width: 92px;
+		height: 60px;
+
+		.hash-tag {
+			.green-sharp {
+				color: #49A144;
+				font-size: 16px;
+			}
+
+			.tag {
+				font-size: 16px;
+				color: white;
+				;
+			}
+		}
 	}
 }
 
@@ -103,11 +124,12 @@ footer {
 	margin: auto;
 	width: 100vw;
 	max-width: $maxWidthContent;
+	padding: 0 8px 0;
 }
 
 .btn-up {
 	border: none;
-	background: url('./images/btnUp.svg');
+	background: url(./images/btnUp.svg);
 	width: 80px;
 	height: 80px;
 	position: fixed;

@@ -7,7 +7,7 @@
 header {
   position: fixed;
   height: 72px;
-  width: 100vw;
+  width: 100%;
   -webkit-box-shadow: 0 0 10px 0 #b8b8b8;
           box-shadow: 0 0 10px 0 #b8b8b8;
   background: white;
@@ -20,7 +20,7 @@ header .header-container {
 }
 
 header .header-container .header-logo {
-  background: url("./images/logo.svg");
+  background: url(./images/logo.svg);
   width: 120px;
   height: 13px;
 }
@@ -35,7 +35,7 @@ header .header-container .header-btn-container .sign-in-btn {
 
 header .header-container .header-btn-container .bascet-btn {
   border: none;
-  background: url("./images/basket.svg");
+  background: url(./images/basket.svg);
   width: 19px;
   height: 23px;
 }
@@ -72,6 +72,11 @@ main .list-restaurats .header-list-rest {
   font-size: 16px;
 }
 
+main .list-restaurats .card {
+  width: 308px;
+  height: 366px;
+}
+
 main .list-restaurats .rest-img {
   height: 256px;
   width: 317.93548583984375px;
@@ -83,26 +88,42 @@ footer {
 }
 
 footer .footer-logo {
-  background: url("./images/logo.svg");
+  background: url(./images/logo.svg);
   width: 191px;
   height: 20px;
 }
 
 footer .hor-line-light {
-  background-color: #FFFFFF;
+  background-color: white;
   height: 1px;
   opacity: 0.3;
+}
+
+footer .social {
+  width: 92px;
+  height: 60px;
+}
+
+footer .social .hash-tag .green-sharp {
+  color: #49A144;
+  font-size: 16px;
+}
+
+footer .social .hash-tag .tag {
+  font-size: 16px;
+  color: white;
 }
 
 .content {
   margin: auto;
   width: 100vw;
   max-width: 962px;
+  padding: 0 8px 0;
 }
 
 .btn-up {
   border: none;
-  background: url("./images/btnUp.svg");
+  background: url(./images/btnUp.svg);
   width: 80px;
   height: 80px;
   position: fixed;
