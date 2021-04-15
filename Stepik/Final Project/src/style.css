@@ -150,6 +150,10 @@ footer {
   height: 552px;
 }
 
+footer .footer-logo-container {
+  padding: 56px 0 41px;
+}
+
 footer .footer-logo-container .footer-logo {
   background: url(./images/logoLight.svg);
   width: 191px;
