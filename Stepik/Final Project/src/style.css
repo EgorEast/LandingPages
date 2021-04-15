@@ -10,6 +10,7 @@ header {
   width: 100vw;
   -webkit-box-shadow: 0 0 10px 0 #b8b8b8;
           box-shadow: 0 0 10px 0 #b8b8b8;
+  background: white;
 }
 
 header .header-container {
