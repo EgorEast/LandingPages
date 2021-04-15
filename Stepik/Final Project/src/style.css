@@ -19,6 +19,12 @@ header .header-container {
   display: flex;
 }
 
+header .header-container .header-logo {
+  background: url("./images/logo.svg");
+  width: 120px;
+  height: 13px;
+}
+
 header .header-container .header-btn-container .sign-in-btn {
   background: none;
   border: 1px solid #E0E0E0;
@@ -71,10 +77,27 @@ main .list-restaurats .rest-img {
   width: 317.93548583984375px;
 }
 
+footer {
+  background: #262626;
+  height: 552px;
+}
+
+footer .footer-logo {
+  background: url("./images/logo.svg");
+  width: 191px;
+  height: 20px;
+}
+
+footer .hor-line-light {
+  background-color: #FFFFFF;
+  height: 1px;
+  opacity: 0.3;
+}
+
 .content {
   margin: auto;
   width: 100vw;
-  max-width: 700px;
+  max-width: 962px;
 }
 
 .btn-up {
