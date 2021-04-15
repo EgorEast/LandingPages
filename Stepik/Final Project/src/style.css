@@ -123,9 +123,22 @@ main .list-restaurats .card {
   height: 366px;
 }
 
-main .list-restaurats .rest-img {
+main .list-restaurats .card .rest-img {
   height: 256px;
   width: 100%;
+}
+
+main .list-restaurats .card .rest-title {
+  font-size: 16px;
+}
+
+main .list-restaurats .card .dish-top {
+  font-size: 14px;
+  color: #626262;
+}
+
+main .list-restaurats .card .cooking-time {
+  font-size: 13px;
 }
 
 footer {

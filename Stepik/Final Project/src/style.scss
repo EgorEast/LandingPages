@@ -107,11 +107,24 @@ main {
 		.card {
 			width: 308px;
 			height: 366px;
-		}
 
-		.rest-img {
-			height: 256px;
-			width: 100%;
+			.rest-img {
+				height: 256px;
+				width: 100%;
+			}
+
+			.rest-title {
+				font-size: 16px;
+			}
+
+			.dish-top {
+				font-size: 14px;
+				color: #626262;
+			}
+
+			.cooking-time {
+				font-size: 13px;
+			}
 		}
 	}
 }
