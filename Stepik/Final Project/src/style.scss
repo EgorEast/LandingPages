@@ -1,6 +1,8 @@
 $minWidthContent: 307px;
 $maxWidthContent: 962px;
-$logo: url(./images/logo.svg);
+$logoDark: url(./images/logoDark.svg);
+$logoLight: url(./images/logoLight.svg);
+
 
 * {
 	margin: 0px;
@@ -27,7 +29,7 @@ header {
 		align-items: center;
 
 		.header-logo {
-			background: $logo;
+			background: $logoDark;
 			width: 120px;
 			height: 13px;
 		}
@@ -135,10 +137,12 @@ footer {
 	background: #262626;
 	height: 552px;
 
-	.footer-logo {
-		background: $logo;
-		width: 191px;
-		height: 20px;
+	.footer-logo-container {
+		.footer-logo {
+			background: $logoLight;
+			width: 191px;
+			height: 20px;
+		}
 	}
 
 	.hor-line-light {
