@@ -31,6 +31,25 @@
   padding: 0 8px;
 }
 
+@media (max-width: 650px) {
+  .contacts-container,
+  .information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 632px) {
+  .bascet-btn {
+    display: none;
+  }
+}
+
 header {
   position: fixed;
   height: 72px;
@@ -72,7 +91,7 @@ header .header-container .header-btn-container {
 
 header .header-container .header-btn-container .sign-in-btn {
   background: none;
-  border: 1px solid #E0E0E0;
+  border: 1px solid white;
   border-radius: 2px;
   width: 78px;
   height: 40px;
@@ -85,12 +104,6 @@ header .header-container .header-btn-container .bascet-btn {
   background: url(./images/basket.svg);
   width: 19px;
   height: 23px;
-}
-
-@media (max-width: 632px) {
-  header .header-container .header-btn-container .bascet-btn {
-    display: none;
-  }
 }
 
 main {
@@ -160,19 +173,6 @@ main .list-restaurats .card .dish-top {
 
 main .list-restaurats .card .cooking-time {
   font-size: 13px;
-}
-
-@media (max-width: 650px) {
-  .contacts-container,
-  .information {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 footer {
