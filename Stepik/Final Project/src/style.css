@@ -119,6 +119,10 @@ footer .download-container .download-btn {
   height: 40px;
 }
 
+footer .information .privacy {
+  opacity: 0;
+}
+
 .content {
   margin: auto;
   width: 100vw;
