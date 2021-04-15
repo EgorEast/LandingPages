@@ -236,6 +236,7 @@ footer .contacts-container .lang-and-contacts .select-lang .language {
   background: #3B3B3B;
   color: white;
   border: none;
+  outline: none;
 }
 
 footer .contacts-container .lang-and-contacts .select-lang .language .lang-option {
@@ -309,9 +310,33 @@ footer .contacts-container .service {
   padding: 39px 0 48px;
 }
 
+footer .download-container {
+  padding: 41px 0 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 footer .download-container .download-btn {
-  width: 135px;
   height: 40px;
+  border: none;
+}
+
+footer .download-container .app-store-bcgnd {
+  background: url(./images/downloadOnTheAppStore.svg);
+  width: 121px;
+}
+
+footer .download-container .google-play-bcgnd {
+  background: url(./images/downloadOnTheGooglePlay.svg);
+  width: 135px;
+}
+
+footer .download-container .interval-41 {
+  width: 41px;
 }
 
 footer .information .privacy {

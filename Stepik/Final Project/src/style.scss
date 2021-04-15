@@ -203,10 +203,13 @@ footer {
 					color: white;
 					border: none;
 
+					outline: none;
+
 					.lang-option {
 						color: white;
 					}
 				}
+
 			}
 
 			.social {
@@ -266,9 +269,27 @@ footer {
 	}
 
 	.download-container {
+		padding: 41px 0 39px;
+		display: flex;
+		justify-content: center;
+
 		.download-btn {
-			width: 135px;
 			height: 40px;
+			border: none;
+		}
+
+		.app-store-bcgnd {
+			background: url(./images/downloadOnTheAppStore.svg);
+			width: 121px;
+		}
+
+		.google-play-bcgnd {
+			background: url(./images/downloadOnTheGooglePlay.svg);
+			width: 135px;
+		}
+
+		.interval-41 {
+			width: 41px;
 		}
 	}
 
