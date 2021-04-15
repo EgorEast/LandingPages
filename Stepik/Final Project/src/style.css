@@ -9,6 +9,26 @@
   display: none;
 }
 
+.hor-line-light {
+  background-color: white;
+  height: 1px;
+  opacity: 0.3;
+}
+
+.hor-line-dark {
+  background-color: #757575;
+  height: 1px;
+  opacity: 0.3;
+}
+
+.content {
+  margin: auto;
+  width: 100vw;
+  max-width: 962px;
+  min-width: 307px;
+  padding: 0 8px;
+}
+
 header {
   position: fixed;
   height: 72px;
@@ -97,12 +117,6 @@ main .search .search-field-container .search-field {
   font-size: 16px;
 }
 
-main .search .hor-line-dark {
-  background-color: #757575;
-  height: 1px;
-  opacity: 0.3;
-}
-
 main .rest-cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,12 +174,6 @@ footer .footer-logo-container .footer-logo {
   height: 20px;
 }
 
-footer .hor-line-light {
-  background-color: white;
-  height: 1px;
-  opacity: 0.3;
-}
-
 footer .social {
   width: 92px;
   height: 60px;
@@ -188,14 +196,6 @@ footer .download-container .download-btn {
 
 footer .information .privacy {
   opacity: 0;
-}
-
-.content {
-  margin: auto;
-  width: 100vw;
-  max-width: 962px;
-  min-width: 307px;
-  padding: 0 8px;
 }
 
 .btn-up {

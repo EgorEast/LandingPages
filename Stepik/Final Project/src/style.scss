@@ -15,6 +15,26 @@ $logoLight: url(./images/logoLight.svg);
 	display: none;
 }
 
+.hor-line-light {
+	background-color: white; // Цвет линии 
+	height: 1px; // Толщина линии
+	opacity: 0.3;
+}
+
+.hor-line-dark {
+	background-color: #757575; // Цвет линии 
+	height: 1px; // Толщина линии
+	opacity: 0.3;
+}
+
+.content {
+	margin: auto;
+	width: 100vw;
+	max-width: $maxWidthContent;
+	min-width: $minWidthContent;
+	padding: 0 8px;
+}
+
 header {
 	position: fixed;
 	height: 72px;
@@ -64,8 +84,6 @@ header {
 	}
 }
 
-
-
 main {
 	padding-top: 72px;
 
@@ -84,12 +102,6 @@ main {
 				outline: none;
 				font-size: 16px;
 			}
-		}
-
-		.hor-line-dark {
-			background-color: #757575; // Цвет линии 
-			height: 1px; // Толщина линии
-			opacity: 0.3;
 		}
 	}
 
@@ -147,12 +159,6 @@ footer {
 		}
 	}
 
-	.hor-line-light {
-		background-color: white; // Цвет линии 
-		height: 1px; // Толщина линии
-		opacity: 0.3;
-	}
-
 	.social {
 		width: 92px;
 		height: 60px;
@@ -183,14 +189,6 @@ footer {
 			opacity: 0;
 		}
 	}
-}
-
-.content {
-	margin: auto;
-	width: 100vw;
-	max-width: $maxWidthContent;
-	min-width: $minWidthContent;
-	padding: 0 8px;
 }
 
 .btn-up {
