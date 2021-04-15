@@ -66,6 +66,8 @@ main {
 	padding-top: 72px;
 
 	.search {
+		margin-bottom: 56px;
+
 		.search-field-container {
 			height: 48px;
 			display: flex;
@@ -76,6 +78,7 @@ main {
 				width: 100%;
 				border: none;
 				outline: none;
+				font-size: 16px;
 			}
 		}
 

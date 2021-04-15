@@ -73,6 +73,10 @@ main {
   padding-top: 72px;
 }
 
+main .search {
+  margin-bottom: 56px;
+}
+
 main .search .search-field-container {
   height: 48px;
   display: -webkit-box;
@@ -88,6 +92,7 @@ main .search .search-field-container .search-field {
   width: 100%;
   border: none;
   outline: none;
+  font-size: 16px;
 }
 
 main .search .hor-line-dark {
