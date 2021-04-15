@@ -113,6 +113,7 @@ main .rest-cards-container {
 main .list-restaurats .header-list-rest {
   font-family: Roboto;
   font-size: 22px;
+  margin-bottom: 16px;
 }
 
 main .list-restaurats .card {
