@@ -147,7 +147,9 @@ main {
 }
 
 @media (max-width: 650px) {
-	.contacts-container {
+
+	.contacts-container,
+	.information {
 		display: flex;
 		flex-direction: column;
 	}
@@ -155,6 +157,12 @@ main {
 
 footer {
 	background: $footerColorBackground;
+
+	.foot-link {
+		color: white;
+		text-decoration: none;
+		margin-bottom: 23px;
+	}
 
 	.footer-logo-container {
 		padding: 56px 0 41px;
@@ -236,11 +244,7 @@ footer {
 			}
 		}
 
-		.foot-link {
-			color: white;
-			text-decoration: none;
-			margin-bottom: 23px;
-		}
+
 
 		.partnership {
 			display: flex;
@@ -294,8 +298,29 @@ footer {
 	}
 
 	.information {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 40px 0;
+
+		.trademark {
+			width: 33.33vw;
+			max-width: 308px;
+			min-width: 227px;
+
+			color: white;
+			margin: 0 0 23px;
+		}
+
 		.privacy {
-			opacity: 0;
+			width: 33.33vw;
+			max-width: 308px;
+			min-width: 255px;
+		}
+
+		.terms-service {
+			width: 33.33vw;
+			max-width: 308px;
+			min-width: 240px;
 		}
 	}
 }
