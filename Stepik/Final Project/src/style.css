@@ -1,6 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Roboto;
   color: #1D1D1D;
 }
@@ -139,6 +141,7 @@ main .list-restaurats .header-list-rest {
 main .list-restaurats .card {
   width: 308px;
   height: 366px;
+  margin: auto;
 }
 
 main .list-restaurats .card .rest-img {

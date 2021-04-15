@@ -8,6 +8,7 @@ $footerColorBackground: #262626;
 * {
 	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 	font-family: Roboto;
 	color: #1D1D1D;
 }
@@ -124,6 +125,7 @@ main {
 		.card {
 			width: 308px;
 			height: 366px;
+			margin: auto;
 
 			.rest-img {
 				height: 256px;
