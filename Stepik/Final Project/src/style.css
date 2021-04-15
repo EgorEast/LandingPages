@@ -114,6 +114,11 @@ footer .social .hash-tag .tag {
   color: white;
 }
 
+footer .download-container .download-btn {
+  width: 135px;
+  height: 40px;
+}
+
 .content {
   margin: auto;
   width: 100vw;
