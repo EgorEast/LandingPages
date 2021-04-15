@@ -1,4 +1,4 @@
-// $minWidthContent: ;
+$minWidthContent: 307px;
 $maxWidthContent: 962px;
 $logo: url(./images/logo.svg);
 
@@ -18,10 +18,12 @@ header {
 	width: 100%;
 	box-shadow: 0 0 10px 0 #b8b8b8;
 	background: white;
+	display: flex;
 
 	.header-container {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 
 		.header-logo {
 			background: $logo;
@@ -30,7 +32,8 @@ header {
 		}
 
 		.header-btn-container {
-			width: 134px;
+			display: flex;
+			align-items: center;
 
 			.sign-in-btn {
 				background: none;
@@ -41,6 +44,7 @@ header {
 			}
 
 			.bascet-btn {
+				margin-left: 27px;
 				border: none;
 				background: url(./images/basket.svg);
 				width: 19px;
@@ -49,6 +53,8 @@ header {
 		}
 	}
 }
+
+
 
 main {
 	padding-top: 72px;
@@ -150,6 +156,7 @@ footer {
 	margin: auto;
 	width: 100vw;
 	max-width: $maxWidthContent;
+	min-width: $minWidthContent;
 	padding: 0 8px;
 }
 
