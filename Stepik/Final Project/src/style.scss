@@ -6,6 +6,7 @@ $logo: url(./images/logo.svg);
 	margin: 0px;
 	padding: 0px;
 	font-family: Roboto;
+	color: #1D1D1D;
 }
 
 ::-webkit-scrollbar {
@@ -41,6 +42,7 @@ header {
 				border-radius: 2px;
 				width: 78px;
 				height: 40px;
+				font-family: RobotoMedium;
 			}
 
 			.bascet-btn {
@@ -188,6 +190,11 @@ footer {
 @font-face {
 	font-family: RobotoBold;
 	src: url(./fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+	font-family: RobotoMedium;
+	src: url(./fonts/Roboto-Medium.ttf);
 }
 
 @font-face {
