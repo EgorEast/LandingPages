@@ -4,6 +4,10 @@
   font-family: Roboto;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 header {
   position: fixed;
   height: 72px;
@@ -17,12 +21,19 @@ header .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .header-container .header-logo {
   background: url(./images/logo.svg);
   width: 120px;
   height: 13px;
+}
+
+header .header-container .header-btn-container {
+  width: 134px;
 }
 
 header .header-container .header-btn-container .sign-in-btn {
