@@ -112,6 +112,10 @@ main .rest-cards-container {
   gap: 16px;
 }
 
+main .list-restaurats {
+  margin-bottom: 80px;
+}
+
 main .list-restaurats .header-list-rest {
   font-family: Roboto;
   font-size: 22px;
