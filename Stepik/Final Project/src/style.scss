@@ -50,6 +50,12 @@ header {
 				width: 19px;
 				height: 23px;
 			}
+
+			@media (max-width: 632px) {
+				.bascet-btn {
+					display: none;
+				}
+			}
 		}
 	}
 }

@@ -63,6 +63,12 @@ header .header-container .header-btn-container .bascet-btn {
   height: 23px;
 }
 
+@media (max-width: 632px) {
+  header .header-container .header-btn-container .bascet-btn {
+    display: none;
+  }
+}
+
 main {
   padding-top: 72px;
 }
