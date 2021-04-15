@@ -67,6 +67,15 @@ main .search .hor-line-dark {
   opacity: 0.3;
 }
 
+main .rest-cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+}
+
 main .list-restaurats .header-list-rest {
   font-family: Roboto;
   font-size: 16px;
@@ -79,7 +88,7 @@ main .list-restaurats .card {
 
 main .list-restaurats .rest-img {
   height: 256px;
-  width: 317.93548583984375px;
+  width: 100%;
 }
 
 footer {
@@ -127,7 +136,7 @@ footer .information .privacy {
   margin: auto;
   width: 100vw;
   max-width: 962px;
-  padding: 0 8px 0;
+  padding: 0 8px;
 }
 
 .btn-up {
