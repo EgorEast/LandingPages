@@ -99,20 +99,58 @@ header {
 main {
 	padding-top: 72px;
 
-	.search {
-		margin-bottom: 56px;
+	.banner {
+		width: 100vw;
+		height: 364px;
+		background: url(./images/banner.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		min-width: $minWidthContent;
 
-		.search-field-container {
-			height: 48px;
+		.offer-day-container {
 			display: flex;
-			align-items: flex-end;
+			height: 100%;
+			align-items: center;
 
-			.search-field {
-				display: block;
-				width: 100%;
-				border: none;
-				outline: none;
-				font-size: 16px;
+			.offer-day {
+				width: 389px;
+				height: 204px;
+				background: white;
+
+				padding: 38px 29px 38px 38px;
+
+				&-title {
+					font-size: 36px;
+					color: #1D1D1D;
+					height: 50%;
+					font-family: RobotoBold;
+				}
+
+				&-information {
+					display: flex;
+					height: 50%;
+					align-items: center;
+					justify-content: space-between;
+				}
+
+				&-dish {
+					display: flex;
+					font-size: 14px;
+					color: #626262;
+				}
+
+				&-cooking-time {
+					width: 100px;
+					height: 32px;
+					color: white;
+					font-size: 13px;
+					background: #262626;
+					border-radius: 16px;
+					justify-content: center;
+					display: flex;
+					align-items: center
+				}
 			}
 		}
 	}

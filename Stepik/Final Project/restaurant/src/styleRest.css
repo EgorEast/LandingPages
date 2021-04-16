@@ -110,26 +110,77 @@ main {
   padding-top: 72px;
 }
 
-main .search {
-  margin-bottom: 56px;
+main .banner {
+  width: 100vw;
+  height: 364px;
+  background: url(./images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 307px;
 }
 
-main .search .search-field-container {
-  height: 48px;
+main .banner .offer-day-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main .search .search-field-container .search-field {
-  display: block;
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 16px;
+main .banner .offer-day-container .offer-day {
+  width: 389px;
+  height: 204px;
+  background: white;
+  padding: 38px 29px 38px 38px;
+}
+
+main .banner .offer-day-container .offer-day-title {
+  font-size: 36px;
+  color: #1D1D1D;
+  height: 50%;
+  font-family: RobotoBold;
+}
+
+main .banner .offer-day-container .offer-day-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .banner .offer-day-container .offer-day-dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  color: #626262;
+}
+
+main .banner .offer-day-container .offer-day-cooking-time {
+  width: 100px;
+  height: 32px;
+  color: white;
+  font-size: 13px;
+  background: #262626;
+  border-radius: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .rest-cards-container {
