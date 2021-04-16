@@ -209,37 +209,38 @@ main .rest-cards-container {
   gap: 16px;
 }
 
-main .list-restaurats {
+main .list-snacks {
+  margin-top: 56px;
   margin-bottom: 80px;
 }
 
-main .list-restaurats .header-list-rest {
+main .list-snacks-header {
   font-family: Roboto;
   font-size: 22px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
-main .list-restaurats .card {
+main .list-snacks .snack-card {
   width: 308px;
   height: 366px;
   margin: auto;
 }
 
-main .list-restaurats .card .rest-img {
+main .list-snacks .snack-card .snack-img {
   height: 256px;
   width: 100%;
 }
 
-main .list-restaurats .card .rest-title {
+main .list-snacks .snack-card .snack-title {
   font-size: 16px;
 }
 
-main .list-restaurats .card .dish-top {
+main .list-snacks .snack-card .ingridient {
   font-size: 14px;
   color: #626262;
 }
 
-main .list-restaurats .card .cooking-time {
+main .list-snacks .snack-card .cost {
   font-size: 13px;
 }
 

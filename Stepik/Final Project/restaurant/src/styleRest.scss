@@ -181,35 +181,36 @@ main {
 		gap: 16px;
 	}
 
-	.list-restaurats {
+	.list-snacks {
+		margin-top: 56px;
 		margin-bottom: 80px;
 
-		.header-list-rest {
+		&-header {
 			font-family: Roboto;
 			font-size: 22px;
-			margin-bottom: 16px;
+			margin-bottom: 32px;
 		}
 
-		.card {
+		.snack-card {
 			width: 308px;
 			height: 366px;
 			margin: auto;
 
-			.rest-img {
+			.snack-img {
 				height: 256px;
 				width: 100%;
 			}
 
-			.rest-title {
+			.snack-title {
 				font-size: 16px;
 			}
 
-			.dish-top {
+			.ingridient {
 				font-size: 14px;
 				color: #626262;
 			}
 
-			.cooking-time {
+			.cost {
 				font-size: 13px;
 			}
 		}
