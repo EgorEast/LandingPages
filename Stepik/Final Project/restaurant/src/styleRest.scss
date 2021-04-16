@@ -1,4 +1,4 @@
-$minWidthContent: 307px;
+$minWidthContent: 310px;
 $maxWidthContent: 978px;
 $lightText: white;
 $lightBgnd: white;
@@ -48,7 +48,7 @@ $footerColorBgnd: #262626;
 	color: #327430;
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
 
 	.contacts-container,
 	.information {
@@ -57,21 +57,45 @@ $footerColorBgnd: #262626;
 	}
 }
 
-@media (max-width: 632px) {
+@media screen and (max-width: 632px) {
 	.bascet-btn {
 		display: none;
 	}
 }
 
-@media (max-width: 815px) {
+@media screen and (max-width: 500px) {
 	.snack-card {
+		height: 102px;
 		width: 100%;
+	}
+
+	.snack-img {
+		height: 102px;
+		width: 102px;
 	}
 }
 
-@media (min-width: 815px) {
+@media screen and (min-width: 500px) and (max-width: 815px) {
 	.snack-card {
+		height: 160px;
+		width: 100%;
+	}
+
+	.snack-img {
+		height: 160px;
+		width: 200px;
+	}
+}
+
+@media screen and (min-width: 815px) {
+	.snack-card {
+		height: 160px;
 		width: 49%;
+	}
+
+	.snack-img {
+		height: 160px;
+		width: 170px;
 	}
 }
 
@@ -204,7 +228,6 @@ main {
 		}
 
 		.snack-card {
-			height: 160px;
 			margin: auto;
 			text-decoration: none;
 			display: flex;
@@ -213,20 +236,29 @@ main {
 			border: solid 1px #75757534;
 			border-radius: 2px;
 
-			.snack-img {
-				height: 160px;
-				width: 170px;
-			}
-
 			.information-on-snack {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
 				padding: 16px;
+				// width: 100%;
 
 				.snack-title-and-ingr-container {
-					.snack-title {
-						font-size: 16px;
+					.snack-title-container {
+						display: inline-block;
+						width: 100%;
+
+						.snack-title {
+							display: inline-block;
+							width: 100%;
+							min-width: 100px;
+							max-width: calc(100% - 10px);
+							font-size: 16px;
+							margin-bottom: 8px;
+							// overflow: hidden;
+							// text-overflow: ellipsis;
+							// white-space: nowrap;
+						}
 					}
 
 					.ingridient {

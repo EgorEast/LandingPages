@@ -27,7 +27,7 @@
   margin: auto;
   width: 100vw;
   max-width: 978px;
-  min-width: 307px;
+  min-width: 310px;
   padding: 0 8px;
 }
 
@@ -35,7 +35,7 @@
   color: #327430;
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .contacts-container,
   .information {
     display: -webkit-box;
@@ -48,21 +48,42 @@
   }
 }
 
-@media (max-width: 632px) {
+@media screen and (max-width: 632px) {
   .bascet-btn {
     display: none;
   }
 }
 
-@media (max-width: 815px) {
+@media screen and (max-width: 500px) {
   .snack-card {
+    height: 102px;
     width: 100%;
+  }
+  .snack-img {
+    height: 102px;
+    width: 102px;
   }
 }
 
-@media (min-width: 815px) {
+@media screen and (min-width: 500px) and (max-width: 815px) {
   .snack-card {
+    height: 160px;
+    width: 100%;
+  }
+  .snack-img {
+    height: 160px;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 815px) {
+  .snack-card {
+    height: 160px;
     width: 49%;
+  }
+  .snack-img {
+    height: 160px;
+    width: 170px;
   }
 }
 
@@ -134,7 +155,7 @@ main .banner {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-width: 307px;
+  min-width: 310px;
 }
 
 main .banner .offer-day-container {
@@ -234,7 +255,6 @@ main .list-snacks-header {
 }
 
 main .list-snacks .snack-card {
-  height: 160px;
   margin: auto;
   text-decoration: none;
   display: -webkit-box;
@@ -245,11 +265,6 @@ main .list-snacks .snack-card {
           justify-content: space-between;
   border: solid 1px #75757534;
   border-radius: 2px;
-}
-
-main .list-snacks .snack-card .snack-img {
-  height: 160px;
-  width: 170px;
 }
 
 main .list-snacks .snack-card .information-on-snack {
@@ -266,8 +281,18 @@ main .list-snacks .snack-card .information-on-snack {
   padding: 16px;
 }
 
-main .list-snacks .snack-card .information-on-snack .snack-title-and-ingr-container .snack-title {
+main .list-snacks .snack-card .information-on-snack .snack-title-and-ingr-container .snack-title-container {
+  display: inline-block;
+  width: 100%;
+}
+
+main .list-snacks .snack-card .information-on-snack .snack-title-and-ingr-container .snack-title-container .snack-title {
+  display: inline-block;
+  width: 100%;
+  min-width: 100px;
+  max-width: calc(100% - 10px);
   font-size: 16px;
+  margin-bottom: 8px;
 }
 
 main .list-snacks .snack-card .information-on-snack .snack-title-and-ingr-container .ingridient {
