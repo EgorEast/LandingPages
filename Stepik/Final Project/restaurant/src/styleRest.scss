@@ -1,8 +1,15 @@
 $minWidthContent: 307px;
 $maxWidthContent: 978px;
+$lightText: white;
+$lightBgnd: white;
 $logoDark: url(../../src/images/logoDark.svg);
 $logoLight: url(../../src/images/logoLight.svg);
-$footerColorBackground: #262626;
+$bannerBgnd: url(./images/banner.png);
+$appStoreBgnd: url(../../src/images/downloadOnTheAppStore.svg);
+$googlePlayBgnd: url(../../src/images/downloadOnTheGooglePlay.svg);
+$btnUpBgnd: url(../../src/images/btnUp.svg);
+
+$footerColorBgnd: #262626;
 
 
 * {
@@ -18,7 +25,7 @@ $footerColorBackground: #262626;
 }
 
 .hor-line-light {
-	background-color: white; // Цвет линии 
+	background: $lightBgnd; // Цвет линии 
 	height: 1px; // Толщина линии
 	opacity: 0.3;
 }
@@ -58,7 +65,7 @@ header {
 	height: 72px;
 	width: 100%;
 	box-shadow: 0 0 10px 0 #b8b8b8;
-	background: white;
+	background: $lightBgnd;
 	display: flex;
 
 	.header-container {
@@ -102,7 +109,7 @@ main {
 	.banner {
 		width: 100vw;
 		height: 364px;
-		background: url(./images/banner.png);
+		background: $bannerBgnd;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -116,13 +123,12 @@ main {
 			.offer-day {
 				width: 389px;
 				height: 204px;
-				background: white;
+				background: $lightBgnd;
 
 				padding: 38px 29px 38px 38px;
 
 				&-title {
 					font-size: 36px;
-					color: #1D1D1D;
 					height: 50%;
 					font-family: RobotoBold;
 				}
@@ -143,7 +149,7 @@ main {
 				&-cooking-time {
 					width: 100px;
 					height: 32px;
-					color: white;
+					color: $lightText;
 					font-size: 13px;
 					background: #262626;
 					border-radius: 16px;
@@ -197,10 +203,10 @@ main {
 }
 
 footer {
-	background: $footerColorBackground;
+	background: $footerColorBgnd;
 
 	.foot-link {
-		color: white;
+		color: $lightText;
 		text-decoration: none;
 		margin-bottom: 23px;
 	}
@@ -249,12 +255,12 @@ footer {
 				.language {
 					width: 179px;
 					background: #3B3B3B;
-					color: white;
+					color: $lightText;
 					border: none;
 					outline: none;
 
 					.lang-option {
-						color: white;
+						color: $lightText;
 					}
 				}
 
@@ -274,7 +280,7 @@ footer {
 
 					.tag {
 						font-size: 16px;
-						color: white;
+						color: $lightText;
 					}
 				}
 
@@ -321,12 +327,12 @@ footer {
 		}
 
 		.app-store-bcgnd {
-			background: url(../../src/images/downloadOnTheAppStore.svg);
+			background: $appStoreBgnd;
 			width: 121px;
 		}
 
 		.google-play-bcgnd {
-			background: url(../../src/images/downloadOnTheGooglePlay.svg);
+			background: $googlePlayBgnd;
 			width: 135px;
 		}
 
@@ -345,7 +351,7 @@ footer {
 			max-width: 308px;
 			min-width: 227px;
 
-			color: white;
+			color: $lightText;
 			margin: 0 0 23px;
 		}
 
@@ -365,7 +371,7 @@ footer {
 
 .btn-up {
 	border: none;
-	background: url(../../src/images/btnUp.svg);
+	background: $btnUpBgnd;
 	width: 80px;
 	height: 80px;
 	position: fixed;
