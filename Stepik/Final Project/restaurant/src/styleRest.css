@@ -54,6 +54,18 @@
   }
 }
 
+@media (max-width: 815px) {
+  .snack-card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 815px) {
+  .snack-card {
+    width: 49%;
+  }
+}
+
 header {
   position: fixed;
   height: 72px;
@@ -64,6 +76,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 1;
 }
 
 header .header-container {
@@ -221,27 +234,50 @@ main .list-snacks-header {
 }
 
 main .list-snacks .snack-card {
-  width: 308px;
-  height: 366px;
+  height: 160px;
   margin: auto;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: solid 1px #75757534;
+  border-radius: 2px;
 }
 
 main .list-snacks .snack-card .snack-img {
-  height: 256px;
-  width: 100%;
+  height: 160px;
+  width: 170px;
 }
 
-main .list-snacks .snack-card .snack-title {
+main .list-snacks .snack-card .information-on-snack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px;
+}
+
+main .list-snacks .snack-card .information-on-snack .snack-title-and-ingr-container .snack-title {
   font-size: 16px;
 }
 
-main .list-snacks .snack-card .ingridient {
-  font-size: 14px;
+main .list-snacks .snack-card .information-on-snack .snack-title-and-ingr-container .ingridient {
+  font-size: 13px;
   color: #626262;
 }
 
-main .list-snacks .snack-card .cost {
-  font-size: 13px;
+main .list-snacks .snack-card .information-on-snack .cost {
+  font-weight: 500;
+  font-size: 15px;
 }
 
 footer {
