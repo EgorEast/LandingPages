@@ -155,6 +155,7 @@ main .list-restaurats .card {
   width: 308px;
   height: 366px;
   margin: auto;
+  text-decoration: none;
 }
 
 main .list-restaurats .card .rest-img {
