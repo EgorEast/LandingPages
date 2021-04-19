@@ -1,8 +1,14 @@
-$minWidthContent: 307px;
+$minWidthContent: 310px;
 $maxWidthContent: 978px;
-$logoDark: url(./images/logoDark.svg);
-$logoLight: url(./images/logoLight.svg);
-$footerColorBackground: #262626;
+$lightText: white;
+$lightBgnd: white;
+$footerColorBgnd: #262626;
+$logoDark: url(./src/images/logoDark.svg);
+$logoLight: url(./src/images/logoLight.svg);
+$basketBtn: url(./src/images/basket.svg);
+$appStoreImg: url(./src/images/downloadOnTheAppStore.svg);
+$googlePlayImg: url(./src/images/downloadOnTheGooglePlay.svg);
+$btnUpBgnd: url(../../src/images/btnUp.svg);
 
 
 * {
@@ -18,7 +24,7 @@ $footerColorBackground: #262626;
 }
 
 .hor-line-light {
-	background-color: white; // Цвет линии 
+	background: $lightBgnd; // Цвет линии 
 	height: 1px; // Толщина линии
 	opacity: 0.3;
 }
@@ -36,6 +42,11 @@ $footerColorBackground: #262626;
 	min-width: $minWidthContent;
 	padding: 0 8px;
 }
+
+.rgeen-text {
+	color: #327430;
+}
+
 
 @media (max-width: 650px) {
 
@@ -58,7 +69,7 @@ header {
 	height: 72px;
 	width: 100%;
 	box-shadow: 0 0 10px 0 #b8b8b8;
-	background: white;
+	background: $lightBgnd;
 	display: flex;
 	z-index: 1;
 
@@ -89,7 +100,7 @@ header {
 			.bascet-btn {
 				margin-left: 27px;
 				border: none;
-				background: url(./images/basket.svg);
+				background: $basketBtn;
 				width: 19px;
 				height: 23px;
 			}
@@ -97,74 +108,11 @@ header {
 	}
 }
 
-main {
-	padding-top: 72px;
-
-	.search {
-		margin-bottom: 56px;
-
-		.search-field-container {
-			height: 48px;
-			display: flex;
-			align-items: flex-end;
-
-			.search-field {
-				display: block;
-				width: 100%;
-				border: none;
-				outline: none;
-				font-size: 16px;
-			}
-		}
-	}
-
-	.rest-cards-container {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 16px;
-	}
-
-	.list-restaurats {
-		margin-bottom: 80px;
-
-		.header-list-rest {
-			font-family: Roboto;
-			font-size: 22px;
-			margin-bottom: 16px;
-		}
-
-		.card {
-			width: 308px;
-			height: 366px;
-			margin: auto;
-			text-decoration: none;
-
-			.rest-img {
-				height: 256px;
-				width: 100%;
-			}
-
-			.rest-title {
-				font-size: 16px;
-			}
-
-			.dish-top {
-				font-size: 14px;
-				color: #626262;
-			}
-
-			.cooking-time {
-				font-size: 13px;
-			}
-		}
-	}
-}
-
 footer {
-	background: $footerColorBackground;
+	background: $footerColorBgnd;
 
 	.foot-link {
-		color: white;
+		color: $lightText;
 		text-decoration: none;
 		margin-bottom: 23px;
 	}
@@ -213,12 +161,12 @@ footer {
 				.language {
 					width: 179px;
 					background: #3B3B3B;
-					color: white;
+					color: $lightText;
 					border: none;
 					outline: none;
 
 					.lang-option {
-						color: white;
+						color: $lightText;
 					}
 				}
 
@@ -238,7 +186,7 @@ footer {
 
 					.tag {
 						font-size: 16px;
-						color: white;
+						color: $lightText;
 					}
 				}
 
@@ -285,12 +233,12 @@ footer {
 		}
 
 		.app-store-bcgnd {
-			background: url(./images/downloadOnTheAppStore.svg);
+			background: $appStoreImg;
 			width: 121px;
 		}
 
 		.google-play-bcgnd {
-			background: url(./images/downloadOnTheGooglePlay.svg);
+			background: $googlePlayImg;
 			width: 135px;
 		}
 
@@ -309,7 +257,7 @@ footer {
 			max-width: 308px;
 			min-width: 227px;
 
-			color: white;
+			color: $lightText;
 			margin: 0 0 23px;
 		}
 
@@ -329,7 +277,7 @@ footer {
 
 .btn-up {
 	border: none;
-	background: url(./images/btnUp.svg);
+	background: $btnUpBgnd;
 	width: 80px;
 	height: 80px;
 	position: fixed;
@@ -339,20 +287,20 @@ footer {
 
 @font-face {
 	font-family: Roboto;
-	src: url(./fonts/Roboto-Light.ttf);
+	src: url(./src/fonts/Roboto-Light.ttf);
 }
 
 @font-face {
 	font-family: RobotoBold;
-	src: url(./fonts/Roboto-Bold.ttf);
+	src: url(./src/fonts/Roboto-Bold.ttf);
 }
 
 @font-face {
 	font-family: RobotoMedium;
-	src: url(./fonts/Roboto-Medium.ttf);
+	src: url(./src/fonts/Roboto-Medium.ttf);
 }
 
 @font-face {
 	font-family: RobotoItalic;
-	src: url(./fonts/Roboto-Italic.ttf);
+	src: url(./src/fonts/Roboto-Italic.ttf);
 }

@@ -12,7 +12,7 @@
 }
 
 .hor-line-light {
-  background-color: white;
+  background: white;
   height: 1px;
   opacity: 0.3;
 }
@@ -27,8 +27,12 @@
   margin: auto;
   width: 100vw;
   max-width: 978px;
-  min-width: 307px;
+  min-width: 310px;
   padding: 0 8px;
+}
+
+.rgeen-text {
+  color: #327430;
 }
 
 @media (max-width: 650px) {
@@ -76,7 +80,7 @@ header .header-container {
 }
 
 header .header-container .header-logo {
-  background: url(./images/logoDark.svg);
+  background: url(./src/images/logoDark.svg);
   width: 120px;
   height: 13px;
 }
@@ -102,79 +106,9 @@ header .header-container .header-btn-container .sign-in-btn {
 header .header-container .header-btn-container .bascet-btn {
   margin-left: 27px;
   border: none;
-  background: url(./images/basket.svg);
+  background: url(./src/images/basket.svg);
   width: 19px;
   height: 23px;
-}
-
-main {
-  padding-top: 72px;
-}
-
-main .search {
-  margin-bottom: 56px;
-}
-
-main .search .search-field-container {
-  height: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-main .search .search-field-container .search-field {
-  display: block;
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 16px;
-}
-
-main .rest-cards-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 16px;
-}
-
-main .list-restaurats {
-  margin-bottom: 80px;
-}
-
-main .list-restaurats .header-list-rest {
-  font-family: Roboto;
-  font-size: 22px;
-  margin-bottom: 16px;
-}
-
-main .list-restaurats .card {
-  width: 308px;
-  height: 366px;
-  margin: auto;
-  text-decoration: none;
-}
-
-main .list-restaurats .card .rest-img {
-  height: 256px;
-  width: 100%;
-}
-
-main .list-restaurats .card .rest-title {
-  font-size: 16px;
-}
-
-main .list-restaurats .card .dish-top {
-  font-size: 14px;
-  color: #626262;
-}
-
-main .list-restaurats .card .cooking-time {
-  font-size: 13px;
 }
 
 footer {
@@ -192,7 +126,7 @@ footer .footer-logo-container {
 }
 
 footer .footer-logo-container .footer-logo {
-  background: url(./images/logoLight.svg);
+  background: url(./src/images/logoLight.svg);
   width: 191px;
   height: 20px;
 }
@@ -332,12 +266,12 @@ footer .download-container .download-btn {
 }
 
 footer .download-container .app-store-bcgnd {
-  background: url(./images/downloadOnTheAppStore.svg);
+  background: url(./src/images/downloadOnTheAppStore.svg);
   width: 121px;
 }
 
 footer .download-container .google-play-bcgnd {
-  background: url(./images/downloadOnTheGooglePlay.svg);
+  background: url(./src/images/downloadOnTheGooglePlay.svg);
   width: 135px;
 }
 
@@ -376,7 +310,7 @@ footer .information .terms-service {
 
 .btn-up {
   border: none;
-  background: url(./images/btnUp.svg);
+  background: url(../../src/images/btnUp.svg);
   width: 80px;
   height: 80px;
   position: fixed;
@@ -386,21 +320,21 @@ footer .information .terms-service {
 
 @font-face {
   font-family: Roboto;
-  src: url(./fonts/Roboto-Light.ttf);
+  src: url(./src/fonts/Roboto-Light.ttf);
 }
 
 @font-face {
   font-family: RobotoBold;
-  src: url(./fonts/Roboto-Bold.ttf);
+  src: url(./src/fonts/Roboto-Bold.ttf);
 }
 
 @font-face {
   font-family: RobotoMedium;
-  src: url(./fonts/Roboto-Medium.ttf);
+  src: url(./src/fonts/Roboto-Medium.ttf);
 }
 
 @font-face {
   font-family: RobotoItalic;
-  src: url(./fonts/Roboto-Italic.ttf);
+  src: url(./src/fonts/Roboto-Italic.ttf);
 }
 /*# sourceMappingURL=style.css.map */
