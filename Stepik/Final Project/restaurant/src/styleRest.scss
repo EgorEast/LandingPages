@@ -4,7 +4,23 @@ $lightText: white;
 $lightBgnd: white;
 $bannerBgnd: url(./images/banner.png);
 
-@media screen and (max-width: 500px) {
+$MaxMiddleWindow: 815px;
+$MaxSmallWindow: 500px;
+
+@media screen and (min-width: $MaxSmallWindow) {
+	.offer-day-title {
+		font-size: 36px;
+	}
+
+	.offer-day-information {
+		display: flex;
+		height: 50%;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: $MaxSmallWindow) {
 	.snack-card {
 		height: 102px;
 		width: 100%;
@@ -30,7 +46,7 @@ $bannerBgnd: url(./images/banner.png);
 	}
 }
 
-@media screen and (max-width: 815px) {
+@media screen and (min-width: $MaxSmallWindow) and (max-width: $MaxMiddleWindow) {
 	.snack-card {
 		height: 160px;
 		width: 100%;
@@ -42,7 +58,7 @@ $bannerBgnd: url(./images/banner.png);
 	}
 }
 
-@media screen and (min-width: 815px) {
+@media screen and (min-width: $MaxMiddleWindow) {
 	.snack-card {
 		height: 160px;
 		width: 49%;
@@ -54,21 +70,39 @@ $bannerBgnd: url(./images/banner.png);
 	}
 }
 
-@media screen and (min-width: 500px) {
-	.offer-day-title {
-		font-size: 36px;
+@media screen and (max-width: 611px) {
+	.filter {
+		display: none;
 	}
+}
 
-	.offer-day-information {
+@media screen and (min-width: 611px) {
+	.filter {
 		display: flex;
-		height: 50%;
+		height: 80px;
 		align-items: center;
-		justify-content: space-between;
+
+		&-item {
+			text-decoration: none;
+		}
+
+		&-item-first {
+			padding-right: 40px;
+		}
+
+		&-item-end {
+			padding-right: 0;
+		}
+
+		.rgeen-text {
+			color: #327430;
+		}
 	}
 }
 
 main {
 	padding-top: 72px;
+	min-width: $minWidthContent;
 
 	.banner {
 		width: 100vw;
@@ -92,17 +126,16 @@ main {
 				padding: 38px 29px 38px 38px;
 
 				&-title {
-					// font-size: 36px;
 					height: 50%;
 					font-family: RobotoBold;
 				}
 
-				// &-information {
-				// 	display: flex;
-				// 	height: 50%;
-				// 	align-items: center;
-				// 	justify-content: space-between;
-				// }
+				&-information {
+					display: flex;
+					height: 50%;
+					align-items: center;
+					justify-content: space-between;
+				}
 
 				&-dish {
 					display: flex;
@@ -122,16 +155,6 @@ main {
 					align-items: center
 				}
 			}
-		}
-	}
-
-	.filter {
-		display: flex;
-		height: 80px;
-		align-items: center;
-
-		&-item {
-			padding-right: 40px;
 		}
 	}
 
