@@ -113,6 +113,7 @@ header .header-container .header-btn-container .bascet-btn {
 
 footer {
   background: #262626;
+  min-width: 310px;
 }
 
 footer .foot-link {
@@ -232,6 +233,8 @@ footer .contacts-container .partnership {
 }
 
 footer .contacts-container .service {
+  padding: 39px 0 48px;
+  width: 33.33vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,15 +242,6 @@ footer .contacts-container .service {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 33.33vw;
-  max-width: 308px;
-  min-width: 240px;
-  padding: 39px 0 48px;
 }
 
 footer .download-container {
@@ -337,4 +331,4 @@ footer .information .terms-service {
   font-family: RobotoItalic;
   src: url(./src/fonts/Roboto-Italic.ttf);
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

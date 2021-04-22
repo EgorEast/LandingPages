@@ -110,6 +110,7 @@ header {
 
 footer {
 	background: $footerColorBgnd;
+	min-width: $minWidthContent;
 
 	.foot-link {
 		color: $lightText;
@@ -169,7 +170,6 @@ footer {
 						color: $lightText;
 					}
 				}
-
 			}
 
 			.social {
@@ -194,6 +194,7 @@ footer {
 					margin-right: 10px;
 				}
 			}
+
 		}
 
 		.partnership {
@@ -209,16 +210,11 @@ footer {
 		}
 
 		.service {
+			padding: 39px 0 48px;
+			width: 33.33vw;
+
 			display: flex;
 			flex-direction: column;
-			flex-wrap: wrap;
-			justify-content: flex-start;
-
-			width: 33.33vw;
-			max-width: 308px;
-			min-width: 240px;
-			padding: 39px 0 48px;
-
 		}
 	}
 
